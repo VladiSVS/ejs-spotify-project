@@ -1,0 +1,13 @@
+<aside class="asideAlbums">
+    <% tracks.map(elt=> { %>
+        <figure class="topTracks">
+            <figcaption>
+                <%= elt.name %>
+            </figcaption>
+            <audio controls src=<%=elt.preview_url %>>
+                Your browser does not support the
+                <code>audio</code> element.
+            </audio>
+        </figure>
+        <% })%>
+</aside>

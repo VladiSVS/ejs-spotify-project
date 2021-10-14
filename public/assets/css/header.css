@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 76vw;
+    margin-left: 16vw;
+    padding: 0 2%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+header img {
+    width: 100%;
+}
+
+header a {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+}
+
+header > form {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header > form > input:first-of-type {
+    height: 3em;
+    width: 50%;
+    border: 1px solid #CCCCCC;
+    padding-left: 1em;
+}
+
+.search-button {
+    position: absolute;
+    margin-right: 1em;
+    height: 2em;
+    width: 2em;
+    border: none;
+    cursor: pointer;
+    background: url(/assets/img/search.svg);
+}

@@ -1,0 +1,26 @@
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 16vw;
+    border-right: 1px solid #CCCCCC;
+    height: 100vh;
+    padding: 2%;
+    overflow: scroll;
+    z-index: 2;
+}
+
+.topTracks {
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+.topTracks audio{
+    width:  100%;
+}
+
+.asideLabel > img {
+    width: 100%;
+}
+
+

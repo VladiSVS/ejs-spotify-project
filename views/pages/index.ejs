@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <%- include('../components/header.ejs') %>
+        <%- include('../components/aside-index.ejs') %>
+            <section class="list">
+                <% topPlaylists.map(elt=> { %>
+                    <a href=<%=`/playlist/tracks/${elt.id}` %>>
+                        <div class="card">
+                            <% elt.images.splice(0,1).map(elt=> { %>
+                                <img src=<%=elt.url %> alt="">
+                                <% }) %>
+                                    <h1>
+                                        <%= elt.name%>
+                                    </h1>
+                        </div>
+                    </a>
+                    <% }) %>
+            </section>
+</body>
+
+</html>
